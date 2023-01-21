@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
 :root {
+    --c-txt-base: white;
+    --c-txt-muted: #888;
+    --c-bg-base: #101010;
+
     font-size: 16px;
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
-    color: white;
+    color: var(--c-txt-base);
 }
 
 * {
@@ -13,7 +17,7 @@
 }
 
 html {
-    background-color: #101010;
+    background-color: var(--c-bg-base);
 }
 
 main {
@@ -33,20 +37,25 @@ h1 {
 }
 
 a {
-    color: #888;
+    color: var(--c-txt-muted);
     transition: color 0.1s;
 }
 
 a:hover {
-    color: white;
+    color: var(--c-txt-base);
 }
 
 .link-icons {
     display: flex;
     gap: 1rem;
     font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
 li {
     list-style: none;
+}
+
+.muted {
+    color: var(--c-txt-muted);
 }
