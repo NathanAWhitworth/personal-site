@@ -39,7 +39,8 @@ main {
 }
 
 img.profile {
-    max-width: 120px;
+    width: 120px;
+    height: 120px;
     margin-bottom: 2rem;
     border-radius: 50%;
 }
@@ -67,6 +68,7 @@ a:focus-visible {
     gap: 1rem;
     font-size: 1.5rem;
     margin-top: 1rem;
+    height: 33px;
 }
 
 li {
@@ -88,6 +90,10 @@ li {
 
 .timeline > time {
     grid-column: 1;
+}
+
+i.fa-chevron-right {
+    width: 12px;
 }
 
 .timeline > i {
