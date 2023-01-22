@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
 
 :root {
-    --c-txt-base: white;
-    --c-txt-muted: #888;
+    --c-txt-base: #888;
+    --c-txt-bright: white;
     --c-bg-base: #101010;
 
     font-size: 16px;
@@ -20,29 +21,45 @@ html {
     background-color: var(--c-bg-base);
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 main {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    white-space: nowrap;
+    margin: 2rem;
+    animation: fadeIn ease 1s;
+}
+
+img.profile {
+    max-width: 120px;
+    margin-bottom: 2rem;
+    border-radius: 50%;
 }
 
 h1 {
+    color: var(--c-txt-bright);
     font-size: 2rem;
 }
 
 a {
-    color: var(--c-txt-muted);
+    color: var(--c-txt-base);
     transition: color 0.1s;
 }
 
-a:hover {
-    color: var(--c-txt-base);
+a:hover,
+a:active
+a:focus,
+a:focus-visible {
+    outline: none;
+    color: var(--c-txt-bright);
 }
 
 .link-icons {
@@ -56,6 +73,64 @@ li {
     list-style: none;
 }
 
-.muted {
-    color: var(--c-txt-muted);
+.prominent {
+    color: var(--c-txt-bright);
+}
+
+.timeline {
+    margin-top: 4rem;
+    display: grid;
+    row-gap: 0.5rem;
+    text-align: left;
+    align-items: baseline;
+    font-family: 'Fira Mono', monospace;
+}
+
+.timeline > time {
+    grid-column: 1;
+}
+
+.timeline > i {
+    grid-column: 2;
+    margin: 0 1rem 0 0.5rem;
+}
+
+.timeline > i.enable {
+    color: #34b233;
+}
+
+.timeline > i.guild {
+    color: #357b73;
+}
+
+.timeline > i.uob {
+    color: #e42618;
+}
+
+.timeline > i.dstl {
+    color: #fff;
+}
+
+.timeline > span {
+    grid-column: 3;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
