@@ -6,6 +6,11 @@
     --c-txt-bright: white;
     --c-bg-base: #101010;
 
+    --c-acc-enable: #34b233;
+    --c-acc-guild: #357b73;
+    --c-acc-uob: #e42618;
+    --c-acc-dstl: #fff;
+
     font-size: 16px;
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
@@ -102,19 +107,19 @@ i.fa-chevron-right {
 }
 
 .timeline > i.enable {
-    color: #34b233;
+    color: var(--c-acc-enable);
 }
 
 .timeline > i.guild {
-    color: #357b73;
+    color: var(--c-acc-guild);
 }
 
 .timeline > i.uob {
-    color: #e42618;
+    color: var(--c-acc-uob);
 }
 
 .timeline > i.dstl {
-    color: #fff;
+    color: var(--c-acc-dstl);
 }
 
 .timeline > span {
