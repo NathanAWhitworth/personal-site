@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 :root {
     --c-txt-base: #888;
     --c-txt-bright: white;
     --c-bg-base: #101010;
-
-    --c-acc-enable: #34b233;
-    --c-acc-guild: #357b73;
-    --c-acc-uob: #e42618;
-    --c-acc-dstl: #fff;
 
     font-size: 16px;
     font-weight: 400;
@@ -86,48 +80,6 @@ li {
 
 .muted {
     color: var(--c-txt-base);
-}
-
-.timeline {
-    margin-top: 4rem;
-    display: grid;
-    row-gap: 0.5rem;
-    text-align: left;
-    align-items: baseline;
-    font-family: 'Roboto Mono', monospace;
-}
-
-.timeline > time {
-    grid-column: 1;
-}
-
-i.fa-chevron-right {
-    width: 12px;
-}
-
-.timeline > i {
-    grid-column: 2;
-    margin: 0 1rem 0 0.5rem;
-}
-
-.timeline > i.enable {
-    color: var(--c-acc-enable);
-}
-
-.timeline > i.guild {
-    color: var(--c-acc-guild);
-}
-
-.timeline > i.uob {
-    color: var(--c-acc-uob);
-}
-
-.timeline > i.dstl {
-    color: var(--c-acc-dstl);
-}
-
-.timeline > span {
-    grid-column: 3;
 }
 
 .sr-only {
