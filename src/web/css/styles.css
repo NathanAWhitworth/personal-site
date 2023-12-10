@@ -65,20 +65,14 @@ a:focus-visible {
 .link-icons {
     display: flex;
     gap: 1rem;
-    font-size: 1.5rem;
-    height: 33px;
+}
+
+.link-icons svg {
+    width: 1.5rem;
 }
 
 li {
     list-style: none;
-}
-
-.prominent {
-    color: var(--c-txt-bright);
-}
-
-.muted {
-    color: var(--c-txt-base);
 }
 
 .sr-only {
